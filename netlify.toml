@@ -1,0 +1,42 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/"
+  to = "/Home.dc.html"
+  status = 200
+
+[[redirects]]
+  from = "/quote"
+  to = "/Quote.dc.html"
+  status = 200
+
+[[redirects]]
+  from = "/capabilities"
+  to = "/Capabilities.dc.html"
+  status = 200
+
+[[redirects]]
+  from = "/government"
+  to = "/Government.dc.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/About.dc.html"
+  status = 200
+
+[[redirects]]
+  from = "/capability-statement"
+  to = "/CapabilityStatement.dc.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"

@@ -1,0 +1,20 @@
+/* ============================================================
+   PSG EFFECTS — shadows, focus, transitions.
+   Restraint: no drop shadows for drama. Shadows are functional
+   elevation only, tuned cool and low. Focus ring uses Tech Blue.
+   ============================================================ */
+:root {
+  /* Low, cool elevation — competence, not decoration */
+  --shadow-sm: 0 1px 2px rgba(11, 37, 69, 0.06);
+  --shadow-md: 0 2px 8px rgba(11, 37, 69, 0.08);
+  --shadow-lg: 0 8px 24px rgba(11, 37, 69, 0.10);
+
+  /* Subtle navy-on-navy texture allowance (never a gradient wash) */
+  --navy-gradient: linear-gradient(160deg, var(--psg-navy) 0%, var(--psg-navy-2) 100%);
+  --gold-gradient: linear-gradient(90deg, var(--psg-gold-light) 0%, var(--psg-gold) 100%);
+
+  --focus-ring: 0 0 0 3px rgba(0, 102, 204, 0.35); /* Tech Blue focus */
+
+  --transition-fast: 120ms ease; /* @kind other */
+  --transition:      180ms ease; /* @kind other */
+}

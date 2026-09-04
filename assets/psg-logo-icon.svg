@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <rect width="96" height="96" rx="20" fill="#0B2545"></rect>
+  <text x="48" y="52" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="1" fill="#FFFFFF">PSG</text>
+  <g fill="#C9A227">
+    <rect x="18" y="62" width="37.2" height="5" rx="2.5"></rect>
+    <rect x="58.800000000000004" y="62" width="9.6" height="5" rx="2.5"></rect>
+    <path d="M 70.8 58 L 84.8 64.5 L 70.8 71 Z"></path>
+  </g>
+</svg>

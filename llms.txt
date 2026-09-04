@@ -1,0 +1,39 @@
+# Proven Supply Group
+
+> Proven Supply Group (PSG) is a HUBZone-eligible national supplier of government
+> facility products: plumbing, HVAC, MRO, janitorial/sanitation, fasteners/hardware,
+> and industrial/electrical supply. PSG buys through 10 national distributor
+> relationships, screens every line for TAA/BAA and Section 889 compliance, and
+> returns firm, dated quotes to federal, state, and local buyers, usually within
+> 24 hours. The principal answers the phone.
+
+## Entity facts
+- Legal name: Proven Supply Group LLC
+- Location: 7270 Gilpin Way, Ste 150, Denver, CO 80229 (HUBZone-located office)
+- Contact: Matt Gustafson, (970) 396-9855, matt@provensupplygroup.com
+- SAM.gov: Active — UEI MY4VMF7G3A18, CAGE 1CQK4
+- Primary NAICS: 423720 (Plumbing & Heating Equipment and Supplies). 26 NAICS registered.
+- HUBZone: certification in process (NOT yet certified). Do not state as certified.
+- Compliance: TAA/BAA screened; government purchase card (GPC) accepted.
+
+## Capabilities
+- Plumbing & Heating (Hydronics): pipe, fittings, valves, water heaters, boilers, hydronic equipment (NAICS 423720)
+- HVAC & Refrigeration: warm-air heating, A/C and refrigeration equipment, filters, controls (NAICS 423730)
+- Fasteners & Hardware: screws, bolts, nuts, washers, anchors, general hardware (NAICS 423710)
+- Industrial, MRO & Electrical: electrical apparatus, lighting, motors, industrial equipment (NAICS 423840, 423610, 423440)
+- Janitorial & Sanitation: floor-care equipment, cleaning chemicals and compounds (NAICS 423850, 424690)
+- Paper & Facility Consumables: janitorial paper, facility consumables (NAICS 424130, 424990)
+
+## Key pages
+- Home: https://provensupplygroup.com/
+- Capabilities & full NAICS registry: https://provensupplygroup.com/capabilities
+- Government buyers: https://provensupplygroup.com/government
+- Capability statement: https://provensupplygroup.com/capability-statement
+- About: https://provensupplygroup.com/about
+- Request a quote: https://provensupplygroup.com/quote
+
+## How to buy
+Send an RFQ, SF1449, part-number list, or a plain-language requirement by web form,
+email, or phone. PSG prices it across its distributor network, screens for TAA/BAA
+and Section 889, and returns a firm quote with a dated lead time, usually within 24
+hours. Government purchase card accepted for micro-purchase and simplified-acquisition orders.

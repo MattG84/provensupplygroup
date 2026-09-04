@@ -1,0 +1,59 @@
+/* ============================================================
+   PSG COLOR SYSTEM
+   Federal navy + one accent per view (Signal Gold, or Tech Blue
+   sparingly). Sourced from the GovCon Design System PSG skin (§9)
+   and the PSG brand notes. Gold is for rules/fills/icons/text-on-
+   navy only — never gold body text on white.
+   ============================================================ */
+:root {
+  /* --- Family core --- */
+  --psg-navy:        #0B2545; /* Federal Navy — primary brand, headers, dark sections */
+  --psg-navy-2:      #13315C; /* Depth navy — gradients, hover, secondary navy */
+  --psg-gold:        #C9A227; /* Signal Gold — the PSG accent */
+  --psg-gold-light:  #E0B865; /* Gold gradient top / hover */
+  --psg-blue:        #0066CC; /* Tech Blue — PSG-only innovation pop, one use per view */
+
+  /* --- Neutrals / text --- */
+  --psg-ink:    #0F172A; /* Primary body text on light */
+  --psg-slate:  #334155; /* Secondary text */
+  --psg-muted:  #64748B; /* Captions, labels, metadata */
+  --psg-line:   #E2E8F0; /* Borders, dividers, card edges */
+
+  /* --- Surfaces (cool white ramp — PSG runs cooler than CFG) --- */
+  --psg-surface-0: #FFFFFF; /* Base surface */
+  --psg-surface-1: #F8FAFC; /* Raised / alt section */
+  --psg-surface-2: #F1F5F9; /* Sunken / inset */
+
+  /* --- Status (honest chips: Active / In Process / Alert) --- */
+  --psg-active:     #16A34A; /* Active registrations, verified, green light */
+  --psg-inprocess:  #D97706; /* Pending, in process */
+  --psg-alert:      #B91C1C; /* Errors, adverse, hard stops */
+
+  /* ---------- Semantic aliases ---------- */
+  --color-bg:            var(--psg-surface-0);
+  --color-bg-subtle:     var(--psg-surface-1);
+  --color-bg-sunken:     var(--psg-surface-2);
+  --surface-card:        var(--psg-surface-0);
+  --surface-dark:        var(--psg-navy);
+
+  --text-strong:         var(--psg-ink);
+  --text-body:           var(--psg-slate);
+  --text-muted:          var(--psg-muted);
+  --text-on-dark:        var(--psg-surface-0);
+  --text-on-dark-muted:  #8FA2C4; /* muted body on navy */
+
+  --border-default:      var(--psg-line);
+  --border-strong:       #CBD5E1;
+
+  --accent:              var(--psg-gold);
+  --accent-alt:          var(--psg-blue);
+  --accent-on-navy:      var(--psg-gold);
+
+  --link:                var(--psg-blue);
+  --link-hover:          var(--psg-navy-2);
+
+  --status-active:       var(--psg-active);
+  --status-inprocess:    var(--psg-inprocess);
+  --status-alert:        var(--psg-alert);
+  --status-planned:      var(--psg-muted);
+}

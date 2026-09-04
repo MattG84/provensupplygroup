@@ -1,0 +1,46 @@
+/* ============================================================
+   PSG TYPOGRAPHY
+   Archivo for display + headings (700–800, tight tracking, technical).
+   Inter for body + UI (400–500, line-height 1.5–1.6).
+   Eyebrows/labels: Inter 600, UPPERCASE, +0.08em tracking.
+   Never: ALL CAPS body, >2 typefaces, condensed display, serif body.
+   ============================================================ */
+:root {
+  --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:    'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:    ui-monospace, 'SFMono-Regular', 'Menlo', monospace; /* UEI/CAGE/NAICS strings */
+
+  /* Weights */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium:  500; /* @kind font */
+  --fw-semibold:600; /* @kind font */
+  --fw-bold:    700; /* @kind font */
+  --fw-black:   800; /* @kind font */
+
+  /* Type scale (8px-grid friendly) */
+  --fs-display:  clamp(40px, 5vw, 64px); /* @kind font */
+  --fs-h1:       40px;
+  --fs-h2:       30px;
+  --fs-h3:       22px;
+  --fs-h4:       18px;
+  --fs-body-lg:  18px;
+  --fs-body:     16px; /* minimum body on web */
+  --fs-sm:       14px;
+  --fs-eyebrow:  13px;
+  --fs-caption:  12px;
+  --fs-stat:     clamp(44px, 6vw, 72px); /* @kind font */
+
+  --lh-tight:   1.1; /* @kind font */
+  --lh-heading: 1.2; /* @kind font */
+  --lh-body:    1.55; /* @kind font */
+
+  --tracking-display: -0.02em; /* @kind font */
+  --tracking-tight:   -0.01em; /* @kind font */
+  --tracking-eyebrow:  0.08em; /* @kind font */
+  --tracking-data:     0.04em; /* @kind font */
+
+  /* Semantic aliases */
+  --text-family-display: var(--font-display);
+  --text-family-body:    var(--font-body);
+  --text-family-data:    var(--font-mono);
+}

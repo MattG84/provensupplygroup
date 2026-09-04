@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Quote | Proven Supply Group</title>
+<meta name="description" content="Send a part number, spec, or plain list. PSG prices it across national distributor channels and returns a firm, compliance-screened quote, usually within 24 hours.">
+<link rel="canonical" href="https://provensupplygroup.com/quote">
+<meta property="og:site_name" content="Proven Supply Group">
+<meta property="og:title" content="Request a Quote | Proven Supply Group">
+<meta property="og:description" content="Send a part number, spec, or plain list. PSG prices it across national distributor channels and returns a firm, compliance-screened quote, usually within 24 hours.">
+<meta property="og:url" content="https://provensupplygroup.com/quote">
+<meta property="og:type" content="website">
+<script src="./support.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Organization", "@id": "https://provensupplygroup.com/#org", "name": "Proven Supply Group", "legalName": "Proven Supply Group LLC", "alternateName": "PSG", "url": "https://provensupplygroup.com/", "logo": "https://provensupplygroup.com/assets/psg-logo-primary.svg", "email": "matt@provensupplygroup.com", "telephone": "+1-970-396-9855", "description": "HUBZone-eligible national supplier of government facility products: plumbing, HVAC, MRO, janitorial, fasteners, and industrial supply. TAA/BAA screened, government purchase card accepted, quotes in 24 hours.", "founder": { "@type": "Person", "name": "Matt Gustafson" }, "address": { "@type": "PostalAddress", "streetAddress": "7270 Gilpin Way, Ste 150", "addressLocality": "Denver", "addressRegion": "CO", "postalCode": "80229", "addressCountry": "US" }, "areaServed": { "@type": "Country", "name": "United States" }, "identifier": [ { "@type": "PropertyValue", "propertyID": "SAM.gov UEI", "value": "MY4VMF7G3A18" }, { "@type": "PropertyValue", "propertyID": "CAGE Code", "value": "1CQK4" }, { "@type": "PropertyValue", "propertyID": "Primary NAICS", "value": "423720" } ], "sameAs": [ "https://sam.gov/entity/MY4VMF7G3A18/" ] },
+    { "@type": "WebSite", "@id": "https://provensupplygroup.com/#website", "url": "https://provensupplygroup.com/", "name": "Proven Supply Group", "publisher": { "@id": "https://provensupplygroup.com/#org" } }
+  ]
+}
+</script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <script src="./ds-base.js"></script>
+  <style>
+    body { margin: 0; background: #fff; font-family: 'Inter', system-ui, sans-serif; }
+    a { color: #0066CC; }
+    a:hover { color: #13315C; }
+    input, textarea, select { font-family: 'Inter', sans-serif; }
+  </style>
+</helmet>
+
+<header data-screen-label="Header" style="position: sticky; top: 0; z-index: 20; background: #0B2545; border-bottom: 1px solid rgba(255,255,255,0.08);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+    <a href="./Home.dc.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+      <x-import component-from-global-scope="PSGDesignSystem_608ca3.Logo" variant="icon" src="./assets/psg-logo-icon.svg" height="38" hint-size="38px,38px"></x-import>
+      <span style="font-family: 'Archivo', sans-serif; font-weight: 700; color: #fff; font-size: 18px; letter-spacing: -0.01em;">Proven Supply Group</span>
+    </a>
+    <nav style="display: flex; align-items: center; gap: 28px;">
+      <a href="./Capabilities.dc.html" style="font-size: 15px; font-weight: 500; color: #8FA2C4; text-decoration: none;" style-hover="color: #fff;">Capabilities</a>
+      <a href="./Government.dc.html" style="font-size: 15px; font-weight: 500; color: #8FA2C4; text-decoration: none;" style-hover="color: #fff;">Government</a>
+      <a href="./About.dc.html" style="font-size: 15px; font-weight: 500; color: #8FA2C4; text-decoration: none;" style-hover="color: #fff;">About</a>
+      <x-import component-from-global-scope="PSGDesignSystem_608ca3.Button" variant="blue" size="sm" as="a" href="./Quote.dc.html" hint-size="140px,38px">Request a quote</x-import>
+    </nav>
+  </div>
+</header>
+
+<div data-screen-label="Quote hero" style="background: linear-gradient(160deg, #0B2545 0%, #13315C 100%);">
+  <div style="max-width: 860px; margin: 0 auto; padding: 64px 32px 48px;">
+    <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9A227; margin-bottom: 16px;">Request a quote</div>
+    <h1 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(30px, 4vw, 42px); line-height: 1.1; letter-spacing: -0.02em; color: #fff; margin: 0; max-width: 22ch;">Two minutes. A priced, dated quote back in 24 hours.</h1>
+    <p style="font-size: 16px; line-height: 1.55; color: #8FA2C4; margin: 16px 0 0; max-width: 56ch;">Send the requirement however you have it: an RFQ, an SF1449, a part list, or plain language. No account, no portal login.</p>
+  </div>
+</div>
+
+<section data-screen-label="RFQ form" style="max-width: 860px; margin: 0 auto; padding: 48px 32px 96px;">
+  <!-- Step indicator -->
+  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 36px;">
+    <sc-for list="{{ stepMeta }}" as="s" hint-placeholder-count="4">
+      <div style="flex: 1; display: flex; align-items: center; gap: 8px;">
+        <div style="{{ s.circleStyle }}">{{ s.num }}</div>
+        <span style="font-size: 13px; font-weight: 600; color: {{ s.labelColor }}; white-space: nowrap;">{{ s.label }}</span>
+        <sc-if value="{{ s.showLine }}" hint-placeholder-val="{{ true }}"><span style="flex: 1; height: 2px; background: {{ s.lineColor }}; margin-left: 6px;"></span></sc-if>
+      </div>
+    </sc-for>
+  </div>
+
+  <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+    <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 48px 32px; text-align: center;">
+      <div style="width: 52px; height: 52px; border-radius: 999px; background: rgba(22,163,74,0.1); border: 1px solid rgba(22,163,74,0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: #16A34A; font-size: 26px; font-weight: 700;">&#10003;</div>
+      <h2 style="font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 22px; color: #0F172A; margin: 0 0 10px;">Request received.</h2>
+      <p style="font-size: 15px; line-height: 1.6; color: #334155; margin: 0 0 24px; max-width: 44ch; margin-left: auto; margin-right: auto;">Matt will follow up with a priced, screened quote, usually within 24 hours. For anything urgent, call (970) 396-9855.</p>
+      <a href="./Home.dc.html" style="font-size: 15px; font-weight: 600; text-decoration: none;">&larr; Back to home</a>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+    <form name="rfq" data-netlify="true" netlify-honeypot="bot-field" onSubmit="{{ onSubmit }}" style="display: grid; gap: 8px;">
+      <input type="hidden" name="form-name" value="rfq"></input>
+      <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></input></label></p>
+
+      <!-- Step 1: Contact -->
+      <sc-if value="{{ isStep1 }}" hint-placeholder-val="{{ true }}">
+        <div style="display: grid; gap: 20px;">
+          <div style="font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 19px; color: #0F172A;">Who's asking</div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <label style="display: grid; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #334155;">Name</span><input required="" name="name" value="{{ f.name }}" onChange="{{ onNameChange }}" style="font-size: 15px; padding: 12px 14px; border: 1px solid #CBD5E1; border-radius: 8px; outline: none;" style-focus="border-color: #0066CC; box-shadow: 0 0 0 3px rgba(0,102,204,0.35);"></input></label>
+            <label style="display: grid; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #334155;">Agency / organization</span><input required="" name="org" value="{{ f.org }}" onChange="{{ onOrgChange }}" style="font-size: 15px; padding: 12px 14px; border: 1px solid #CBD5E1; border-radius: 8px; outline: none;" style-focus="border-color: #0066CC; box-shadow: 0 0 0 3px rgba(0,102,204,0.35);"></input></label>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <label style="display: grid; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #334155;">Email</span><input required="" type="email" name="email" value="{{ f.email }}" onChange="{{ onEmailChange }}" style="font-size: 15px; padding: 12px 14px; border: 1px solid #CBD5E1; border-radius: 8px; outline: none;" style-focus="border-color: #0066CC; box-shadow: 0 0 0 3px rgba(0,102,204,0.35);"></input></label>
+            <label style="display: grid; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #334155;">Phone</span><input name="phone" value="{{ f.phone }}" onChange="{{ onPhoneChange }}" style="font-size: 15px; padding: 12px 14px; border: 1px solid #CBD5E1; border-radius: 8px; outline: none;" style-focus="border-color: #0066CC; box-shadow: 0 0 0 3px rgba(0,102,204,0.35);"></input></label>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- Step 2: Purchase mechanism -->
+      <sc-if value="{{ isStep2 }}" hint-placeholder-val="{{ false }}">
+        <div style="display: grid; gap: 20px;">
+          <div style="font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 19px; color: #0F172A;">How you're buying</div>
+          <div style="display: grid; gap: 10px;">
+            <sc-for list="{{ mechanisms }}" as="m" hint-placeholder-count="4">
+              <label style="{{ m.wrapStyle }}">
+                <input type="radio" name="mechanism" value="{{ m.value }}" checked="{{ m.checked }}" onChange="{{ onMechanism }}" style="accent-color: #0066CC; width: 18px; height: 18px;"></input>
+                <span>
+                  <span style="display: block; font-size: 15px; font-weight: 600; color: #0F172A;">{{ m.title }}</span>
+                  <span style="display: block; font-size: 13.5px; color: #64748B; margin-top: 2px;">{{ m.detail }}</span>
+                </span>
+              </label>
+            </sc-for>
+          </div>
+          <label style="display: grid; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #334155;">Needed by (optional)</span><input type="date" name="needed_by" value="{{ f.neededBy }}" onChange="{{ onNeededByChange }}" style="font-size: 15px; padding: 12px 14px; border: 1px solid #CBD5E1; border-radius: 8px; outline: none; max-width: 220px;" style-focus="border-color: #0066CC; box-shadow: 0 0 0 3px rgba(0,102,204,0.35);"></input></label>
+        </div>
+      </sc-if>
+
+      <!-- Step 3: Requirement -->
+      <sc-if value="{{ isStep3 }}" hint-placeholder-val="{{ false }}">
+        <div style="display: grid; gap: 20px;">
+          <div style="font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 19px; color: #0F172A;">What you need</div>
+          <label style="display: grid; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #334155;">Category</span>
+            <select name="category" value="{{ f.category }}" onChange="{{ onCategoryChange }}" style="font-size: 15px; padding: 12px 14px; border: 1px solid #CBD5E1; border-radius: 8px; outline: none; background: #fff;" style-focus="border-color: #0066CC; box-shadow: 0 0 0 3px rgba(0,102,204,0.35);">
+              <option value="">Select a category</option>
+              <option value="plumbing-heating">Plumbing &amp; heating (hydronics)</option>
+              <option value="hvac-refrigeration">HVAC &amp; refrigeration</option>
+              <option value="fasteners-hardware">Fasteners &amp; hardware</option>
+              <option value="mro-electrical">Industrial, MRO &amp; electrical</option>
+              <option value="janitorial-sanitation">Janitorial &amp; sanitation</option>
+              <option value="paper-consumables">Paper &amp; facility consumables</option>
+              <option value="other">Other / not sure</option>
+            </select>
+          </label>
+          <label style="display: grid; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #334155;">Requirement details</span><textarea required="" name="details" value="{{ f.details }}" onChange="{{ onDetailsChange }}" rows="6" placeholder="Paste an item list, part numbers, an RFQ/SF1449 reference, or describe what you need." style="font-size: 15px; padding: 12px 14px; border: 1px solid #CBD5E1; border-radius: 8px; outline: none; resize: vertical; font-family: inherit;" style-focus="border-color: #0066CC; box-shadow: 0 0 0 3px rgba(0,102,204,0.35);"></textarea></label>
+        </div>
+      </sc-if>
+
+      <!-- Step 4: Review -->
+      <sc-if value="{{ isStep4 }}" hint-placeholder-val="{{ false }}">
+        <div style="display: grid; gap: 20px;">
+          <div style="font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 19px; color: #0F172A;">Review &amp; send</div>
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 22px 24px; display: grid; gap: 10px;">
+            <sc-for list="{{ reviewRows }}" as="r" hint-placeholder-count="6">
+              <div style="display: grid; grid-template-columns: 140px 1fr; gap: 12px; font-size: 14px;">
+                <span style="color: #64748B; font-weight: 600;">{{ r.label }}</span>
+                <span style="color: #0F172A; white-space: pre-wrap;">{{ r.value }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <p style="font-size: 13px; color: #64748B; margin: 0;">By submitting, you'll hear back from Matt directly at the email or phone above.</p>
+        </div>
+      </sc-if>
+
+      <!-- Nav -->
+      <div style="display: flex; justify-content: space-between; margin-top: 32px; padding-top: 24px; border-top: 1px solid #E2E8F0;">
+        <sc-if value="{{ showBack }}" hint-placeholder-val="{{ false }}">
+          <x-import component-from-global-scope="PSGDesignSystem_608ca3.Button" variant="secondary" size="md" type="button" onClick="{{ onBack }}" hint-size="100px,44px">Back</x-import>
+        </sc-if>
+        <sc-if value="{{ showBackSpacer }}" hint-placeholder-val="{{ true }}"><span></span></sc-if>
+        <sc-if value="{{ showNext }}" hint-placeholder-val="{{ true }}">
+          <x-import component-from-global-scope="PSGDesignSystem_608ca3.Button" variant="blue" size="md" type="button" onClick="{{ onNext }}" disabled="{{ nextDisabled }}" hint-size="100px,44px">Continue</x-import>
+        </sc-if>
+        <sc-if value="{{ showSubmit }}" hint-placeholder-val="{{ false }}">
+          <x-import component-from-global-scope="PSGDesignSystem_608ca3.Button" variant="blue" size="md" type="submit" hint-size="140px,44px">Send request</x-import>
+        </sc-if>
+      </div>
+    </form>
+  </sc-if>
+
+  <div style="margin-top: 40px; text-align: center;">
+    <span style="font-size: 14px; color: #64748B;">Prefer email? </span><a href="mailto:matt@provensupplygroup.com?subject=RFQ" style="font-size: 14px; font-weight: 600;">matt@provensupplygroup.com</a>
+    <span style="font-size: 14px; color: #64748B;"> &middot; (970) 396-9855</span>
+  </div>
+</section>
+
+<footer data-screen-label="Footer" style="background: #0B2545; border-top: 1px solid rgba(255,255,255,0.10);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 40px 32px 32px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: ui-monospace, Menlo, monospace; font-size: 12px; letter-spacing: 0.03em; color: rgba(255,255,255,0.45);">
+      <span>UEI MY4VMF7G3A18 &nbsp;&middot;&nbsp; CAGE 1CQK4 &nbsp;&middot;&nbsp; Primary NAICS 423720</span>
+      <span>SAM.gov Active &middot; TAA/BAA Compliant &middot; HUBZone In Process</span>
+    </div>
+  </div>
+</footer>
+<dc-import name="AskPSG" hint-size="64px,64px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const MECH = [
+  { value: 'gpc', title: 'GPC / purchase card', detail: 'Micro-purchase, charged same day.' },
+  { value: 'rfq', title: 'RFQ / SF1449', detail: 'Formal open-market quote request.' },
+  { value: 'po', title: 'Direct PO', detail: 'State, local, or education purchase order.' },
+  { value: 'unsure', title: 'Not sure yet', detail: "We'll help figure out the right path." },
+];
+
+class Component extends DCLogic {
+  state = {
+    step: 1,
+    submitted: false,
+    f: { name: '', org: '', email: '', phone: '', mechanism: 'gpc', neededBy: '', category: '', details: '' },
+  };
+
+  onField(key, e) {
+    this.setState(s => ({ f: { ...s.f, [key]: e.target.value } }));
+  }
+
+  submitToNetlify(f) {
+    const { neededBy, ...rest } = f;
+    const body = new URLSearchParams({ 'form-name': 'rfq', ...rest, needed_by: neededBy }).toString();
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body })
+      .catch(() => {});
+  }
+
+  renderVals() {
+    const { step, f, submitted } = this.state;
+    const stepLabels = ['Contact', 'Purchase', 'Requirement', 'Review'];
+    const stepMeta = stepLabels.map((label, i) => {
+      const n = i + 1;
+      const active = n === step;
+      const done = n < step;
+      const color = done || active ? '#0066CC' : '#E2E8F0';
+      return {
+        num: done ? '✓' : n,
+        label,
+        labelColor: active ? '#0F172A' : '#64748B',
+        showLine: n < 4,
+        lineColor: done ? '#0066CC' : '#E2E8F0',
+        circleStyle: `width:28px;height:28px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:${done || active ? '#fff' : '#64748B'};background:${color};flex-shrink:0;`,
+      };
+    });
+
+    const catLabels = {
+      'plumbing-heating': 'Plumbing & heating (hydronics)', 'hvac-refrigeration': 'HVAC & refrigeration',
+      'fasteners-hardware': 'Fasteners & hardware', 'mro-electrical': 'Industrial, MRO & electrical',
+      'janitorial-sanitation': 'Janitorial & sanitation', 'paper-consumables': 'Paper & facility consumables',
+      other: 'Other / not sure', '': '—',
+    };
+    const mechLabels = { gpc: 'GPC / purchase card', rfq: 'RFQ / SF1449', po: 'Direct PO', unsure: 'Not sure yet' };
+
+    const step1Valid = f.name.trim() && f.org.trim() && f.email.trim();
+    const step3Valid = f.details.trim();
+
+    return {
+      stepMeta,
+      submitted,
+      notSubmitted: !submitted,
+      isStep1: step === 1, isStep2: step === 2, isStep3: step === 3, isStep4: step === 4,
+      f,
+      onNameChange: (e) => this.onField('name', e),
+      onOrgChange: (e) => this.onField('org', e),
+      onEmailChange: (e) => this.onField('email', e),
+      onPhoneChange: (e) => this.onField('phone', e),
+      onNeededByChange: (e) => this.onField('neededBy', e),
+      onCategoryChange: (e) => this.onField('category', e),
+      onDetailsChange: (e) => this.onField('details', e),
+      mechanisms: MECH.map(m => ({
+        ...m, checked: f.mechanism === m.value,
+        wrapStyle: `display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border:1px solid ${f.mechanism === m.value ? '#0066CC' : '#E2E8F0'};border-radius:10px;cursor:pointer;background:${f.mechanism === m.value ? 'rgba(0,102,204,0.05)' : '#fff'};`,
+      })),
+      onMechanism: (e) => this.setState(s => ({ f: { ...s.f, mechanism: e.target.value } })),
+      reviewRows: [
+        { label: 'Name', value: f.name }, { label: 'Organization', value: f.org },
+        { label: 'Email', value: f.email }, { label: 'Phone', value: f.phone || '—' },
+        { label: 'Purchase path', value: mechLabels[f.mechanism] }, { label: 'Needed by', value: f.neededBy || 'Flexible' },
+        { label: 'Category', value: catLabels[f.category] }, { label: 'Details', value: f.details },
+      ],
+      showBack: step > 1, showBackSpacer: step === 1,
+      showNext: step < 4, showSubmit: step === 4,
+      nextDisabled: (step === 1 && !step1Valid) || (step === 3 && !step3Valid),
+      onNext: () => {
+        if (step === 1 && !step1Valid) return;
+        if (step === 3 && !step3Valid) return;
+        this.setState(s => ({ step: Math.min(4, s.step + 1) }));
+      },
+      onBack: () => this.setState(s => ({ step: Math.max(1, s.step - 1) })),
+      onSubmit: (e) => {
+        e.preventDefault();
+        this.submitToNetlify(this.state.f);
+        this.setState({ submitted: true });
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* ============================================================
+   PSG SPACING + RADIUS + LAYOUT
+   Base unit 8px. All spacing is a multiple: 8,16,24,32,48,64,96.
+   Radius: 12px cards/logo container, 8px small chips, 16px app icon.
+   ============================================================ */
+:root {
+  --space-1:  8px;
+  --space-2:  16px;
+  --space-3:  24px;
+  --space-4:  32px;
+  --space-6:  48px;
+  --space-8:  64px;
+  --space-12: 96px; /* desktop section rhythm */
+
+  --radius-chip:  8px;
+  --radius-card:  12px;
+  --radius-icon:  16px;
+  --radius-pill:  999px;
+
+  --border-width: 1px;
+
+  /* Layout */
+  --content-max:   1200px; /* 12-col grid */
+  --gutter:        24px;
+  --section-pad-y: 96px;   /* desktop */
+  --card-pad:      28px;   /* 24–32px range */
+}
